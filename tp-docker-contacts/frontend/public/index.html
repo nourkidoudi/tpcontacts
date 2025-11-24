@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Contacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📇 Gestion de Contacts</h1>
+        </header>
+
+        <section class="form-section">
+            <h2>Ajouter un contact</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit">Ajouter le contact</button>
+            </form>
+        </section>
+
+        <section class="contacts-section">
+            <h2>Liste des contacts</h2>
+            <div id="contactsList" class="contacts-list">
+                <p class="loading">Chargement...</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
